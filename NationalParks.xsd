@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <xs:element name="NationalParks">
@@ -15,18 +15,22 @@
       <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
       <xs:element name="Address" type="AddressType"/>
     </xs:sequence>
+    <!-- Optional attribute -->
     <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
+    <!-- Required attribute -->
+    <xs:attribute name="NearestAirport" type="xs:string"  use="required"/>
   </xs:complexType>
 
   <xs:complexType name="AddressType">
     <xs:sequence>
-      <xs:element name="Number" type="xs:string"/>
+      <xs:element name="Number" type="xs:integer"/>
       <xs:element name="Street" type="xs:string"/>
       <xs:element name="City" type="xs:string"/>
       <xs:element name="State" type="xs:string"/>
-      <xs:element name="Zip" type="xs:string"/>
+      <xs:element name="Zip" type="xs:integer"/>
     </xs:sequence>
-    <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
   </xs:complexType>
 
 </xs:schema>
+```
+   https://raw.githubusercontent.com/<user>/xml-schemas/main/NationalParks.xsd
