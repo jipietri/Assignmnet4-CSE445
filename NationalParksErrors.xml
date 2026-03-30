@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NationalPark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:noNamespaceSchemaLocation="https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO/NationalParks.xsd">
-
-  <!-- Park 1: Grand Canyon - from Figure 1 sample > Missing the airport  -->
+              xsi:noNamespaceSchemaLocation="https://jipietri.github.io/Assignmnet4-CSE445/NationalParks.xsd">
+	
+  <!-- Park 1: Grand Canyon > 2) Missing the airport (required)  -->
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
     <Phone>928-638-7496</Phone>
@@ -17,9 +17,10 @@
     </Address>
   </NationalPark>
 
-  <!-- Park 2: Yellowstone > Missing Phone Number -->
+  <!-- Park 2: Yellowstone > 3) missing 2nd Phone Number -->
   <NationalPark Rating="4.8">
     <Name>Yellowstone</Name>
+    <Phone>307-344-2107</Phone>
     <Address NearestAirport="Jackson Hole">
       <Number>2</Number>
       <Street>Old Faithful Road</Street>
@@ -56,7 +57,7 @@
     </Address>
   </NationalPark>
 
-  <!-- Park 5: Rocky Mountain > missing </Address> -->
+  <!-- Park 5: Rocky Mountain > 4) missing </Address> -->
   <NationalPark Rating="4.8">
     <Name>Rocky Mountain</Name>
     <Phone>970-586-1206</Phone>
@@ -69,7 +70,7 @@
     
   </NationalPark>
 
-  <!-- Park 6: Olympic > Two Names -->
+  <!-- Park 6: Olympic > 5) Two Names -->
   <NationalPark>
     <Name>Olympic</Name>
     <Name>Olympic National Park</Name>
