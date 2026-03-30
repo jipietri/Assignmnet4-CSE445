@@ -17,8 +17,6 @@
     </xs:sequence>
     <!-- Optional attribute -->
     <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
-    <!-- Required attribute -->
-    <xs:attribute name="NearestAirport" type="xs:string"  use="required"/>
   </xs:complexType>
 
   <xs:complexType name="AddressType">
@@ -29,6 +27,8 @@
       <xs:element name="State" type="xs:string"/>
       <xs:element name="Zip" type="xs:integer"/>
     </xs:sequence>
+     <!-- Required attribute -->
+    <xs:attribute name="NearestAirport" type="xs:string"  use="required"/>
   </xs:complexType>
 
 </xs:schema>
